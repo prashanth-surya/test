@@ -13,5 +13,5 @@ steps:
 - checkout: none
 - script: |
     waiting for completion
-    sleep 180
+    sleep 120
   displayName: 'wait 30 seconds'
