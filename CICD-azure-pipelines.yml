@@ -11,8 +11,19 @@ pool:
   name: hosted-agent
 
 steps:
-- checkout: none
-- script: |
-    waiting for completion
-    sleep 120
-  displayName: 'wait 120 seconds'
+# - checkout: none
+# - script: |
+#     waiting for completion
+#     sleep 120
+#   displayName: 'wait 120 seconds'
+  - task: NodeTool@0
+    inputs:
+      versionSource: 'spec'
+      versionSpec: '18.x'
+      checkLatest: true
+
+  - task: Npm@1
+    inputs:
+      command: 'install'
+      workingDir: '$(System.DefaultWorkingDirectory)'
+    displayName: NPM INSTALL
