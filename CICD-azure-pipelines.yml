@@ -22,8 +22,6 @@ steps:
       versionSpec: '18.x'
       checkLatest: true
 
-  - task: Npm@1
-    inputs:
-      command: 'install'
-      workingDir: '$(System.DefaultWorkingDirectory)'
-    displayName: NPM INSTALL
+  - script: |
+      npm install
+    displayName: 'npm install'
