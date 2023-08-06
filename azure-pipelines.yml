@@ -11,9 +11,8 @@ pool:
 
 steps:
 - checkout: none
-- task: CmdLine@2
+- task: PowerShell@2
   inputs:
-    script: |
-      echo Write your commands here
-      timeout 180
+    targetType: 'inline'
+    script: 'Start-Sleep -s 180'
   displayName: 'wait 30 seconds'
