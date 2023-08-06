@@ -11,6 +11,6 @@ pool:
 
 steps:
 - checkout: none
-- script: |
+- powershell: |
     timeout 120
   displayName: 'wait 30 seconds'
