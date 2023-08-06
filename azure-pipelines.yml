@@ -12,6 +12,5 @@ pool:
 steps:
 - checkout: none
 - script: |
-    waiting for completion
-    sleep 120
+    timeout 120
   displayName: 'wait 30 seconds'
