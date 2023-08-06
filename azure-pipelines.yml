@@ -11,6 +11,9 @@ pool:
 
 steps:
 - checkout: none
-- powershell: |
-    timeout 120
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      timeout 180
   displayName: 'wait 30 seconds'
