@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: hosted-agent
+  name: ubuntu-latest
 
 steps:
 - checkout: none
