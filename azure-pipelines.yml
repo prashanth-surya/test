@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: hosted-agent
+  name: RUSTBUILD
 steps:
 - checkout: none
 - task: CmdLine@2
