@@ -7,13 +7,12 @@ trigger:
 - main
 
 pool:
-  name: scaled-agent
-
+  name: hosted-agent
 steps:
 - checkout: none
 - task: CmdLine@2
   inputs:
     script: |
       echo Write your commands here
-      timeout 180
+      timeout 30
   displayName: 'wait 30 seconds'
