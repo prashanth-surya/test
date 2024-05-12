@@ -7,8 +7,7 @@ trigger:
 - main
 
 pool:
-  name: scaled-agent
-
+  name: windows-2019
 steps:
 - checkout: none
 - task: PowerShell@2
