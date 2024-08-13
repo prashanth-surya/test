@@ -12,11 +12,12 @@ parameters:
   default: 'defaultValue'
 
 pool:
-  name: RUSTBUILD
+  name: ubuntu-latest
 
 steps:
 - checkout: none
 - script: |
     waiting for completion
+    echo ${{ parameters.myParameter }}
     sleep 30
   displayName: 'wait 600 seconds'
