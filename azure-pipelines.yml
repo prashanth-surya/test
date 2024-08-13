@@ -10,6 +10,6 @@ steps:
 - checkout: none
 - script: |
     waiting for completion
-    echo ${{ parameters.myParameter }}
+    echo $(testvar)
     sleep 30
   displayName: 'wait 600 seconds'
