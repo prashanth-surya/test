@@ -1,7 +1,7 @@
 parameters:
 - name: myParameter
   type: string
-  default: 'defaultValue'
+  default: ''
 
 pool:
   name: ubuntu-latest
